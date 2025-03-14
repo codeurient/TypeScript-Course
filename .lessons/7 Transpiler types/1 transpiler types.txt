@@ -1,0 +1,28 @@
+3 növ Transpiler tipi vardır. Üçünündə gördüyü iş eynidir. Onların fərqləri 
+əsasən sürət, xüsusiyyətlər və performans optimizasiyası ilə bağlıdır: 
+
+
+1) Babel                            - Ən məşhur və ən çox istifadə olunan transpiler hesab edilir
+
+
+📌 İstifadəsi:                      https://babeljs.io/docs/babel-preset-typescript#docsNav
+
+
+
+
+
+2) SWC (Speedy Web Compiler)        - Babel-dən 20x daha sürətli alternativdir. 
+                                      Ancaq bəzi köhnə Babel plugin-ləri SWC-də işləməyə bilər.
+
+
+
+
+
+
+3) Sucrase                          - Ən sürətli transpilerlərdən biridir. 20-30x qat.
+
+
+
+
+Əvvəlki dərsdə `TSC` əmrindən istifadə etmişdik Compiler etmək üçün ancaq əslində `Babel` istifadə etmək lazımdır.
+Çünki ən doğru yanaşma budur. 

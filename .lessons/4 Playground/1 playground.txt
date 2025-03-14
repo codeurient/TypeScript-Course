@@ -1,0 +1,1 @@
+Playground bölməsində TS -nin JS koduna necə keçdiyini müşahidə etmək mümkündür. Şəkil 1

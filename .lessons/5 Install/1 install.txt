@@ -1,0 +1,47 @@
+1) TS qurmaq üçün istifadə edilən əmr:    npm install -g typescript                 Şəkil 1
+
+
+
+
+2) install etdikdən sonra `test.ts` adında fayl yaradırıq                           Şəkil 2
+
+
+
+3) Sonra, bir sətrlik sadə kod yazırıq                                              Şəkil 3
+
+
+
+4) Daha sonra isə, terminalda `tsc` əmrini yazaraq `test.ts` faylını `Compiler` edirik `JS` dilinə          Şəkil 4
+Compiler haqqında növbəti qovluqda...
+
+
+
+5) Şəkil 4-də olduğu kimi bir xəta görə bilərik. Bunun bir neçə səbəbi var
+    a) TypeScript-in qlobal (-g) quraşdırılıb-quraşdırılmadığını yoxlamaq lazımdır:             npm list -g --depth=0       - Şəkil 5
+    a) NPM düzgün quraşdırılıb-quraşdırılmadığını yoxlamaq lazımdır:                            npm -v,  node -v            - Şəkil 5
+    b) NPM-in qlobal modullar qovluğun PATH-da olub-olmadığını  yoxlamaq  lazımdır:             echo $PATH                  - Şəkil 5
+    c) Əgər Mac/Linux istifadə ediriksə,  `npm root -g`  ilə  qovluğu  tapmaq olar:             npm root -g                 - Şəkil 5
+
+    d) TSC-nin tam yolunu tapmaq üçün belə bir əmrdən istifadə edirik:                          find /opt/homebrew -name "tsc" -type f      - Şəkil 6
+
+        Şəkil 6 dan görüldüyü kimi `tsc` faylı  /opt/homebrew/Cellar/node/23.3.0/lib/node_modules/typescript/bin/tsc yolunda yerləşir. 
+        Amma PATH dəyişənində bu yer yoxdur, ona görə tsc komandasını terminalda tanımır.
+
+    e) Bu problemi həll etmək üçün PATH dəyişəninə tsc-nin olduğu qovluğu əlavə etmək lazımdır:     Şəkil 7
+
+        İlk öncə terminalda yazırıq:    
+            - export PATH=$PATH:/opt/homebrew/Cellar/node/23.3.0/lib/node_modules/typescript/bin
+
+        Sonra test et edirik:           
+            - tsc --version
+
+        Əgər versiya görünərsə onda bu addımı daimi etmək üçün .zshrc faylına həmin yolu əlavə edirik:
+            - echo 'export PATH=$PATH:/opt/homebrew/Cellar/node/23.3.0/lib/node_modules/typescript/bin' >> ~/.zshrc
+
+        Dəyişiklikləri restart edərək yaxud bu əmri yazaraq yadda saxlayırıq:
+            - source ~/.zshrc
+
+
+
+    6) Artıq TSC əmrini işə salaraq TEST.TS faylını JS formatına çevirə bilərik.                Şəkil 8
+

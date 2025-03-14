@@ -1,0 +1,35 @@
+TypeScript (TS) – Microsoft tərəfindən hazırlanmış, JavaScript-in (JS) üzərində qurulmuş və statik 
+tipləmə xüsusiyyətinə malik proqramlaşdırma dilidir.
+
+
+
+Fərqlər:
+✅ Statik tipləmə – TS-də dəyişənlərin tipləri əvvəlcədən təyin olunur, JS-də isə dinamikdir.
+✅ Təhlükəsizlik – TS kod səhvlərini kod yazılarkən aşkar edir, JS-də isə səhvlər işləmə zamanı üzə çıxır.
+✅ OOP dəstəyi – TS, obyekt yönümlü proqramlaşdırma xüsusiyyətlərinə malikdir.
+✅ Transpilyasiya – TS kodu brauzerlərdə işləməsi üçün JS-ə çevrilməlidir.
+
+Qısaca, TypeScript – JavaScript-in daha strukturlaşdırılmış və təhlükəsiz versiyasıdır. 🚀
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+Obyekt yönümlü proqramlaşdırma (OOP) – kodu obyektlər vasitəsilə idarə etmək üçün istifadə edilən strukturdur.
+
+🔹 Obyekt – xüsusiyyətlər (property) və metodlardan (function) ibarət olan müstəqil vahiddir.
+🔹 Əsas prinsiplər:
+✅ Encapsulation – Məlumatın gizlədilməsi və yalnız lazım olan hissənin açıq olması.
+✅ Inheritance – Mövcud obyektlərin xüsusiyyətlərini yeni obyektlərə ötürmək.
+✅ Polymorphism – Eyni metodun müxtəlif obyektlər üçün fərqli işləməsi.
+✅ Abstraction – Gərəksiz detalların gizlədilməsi, yalnız əsas funksionallığın göstərilməsi.
+
+OOP kodun daha strukturlaşdırılmış, təkrar istifadəyə yararlı və idarəolunan olmasını təmin edir. 🚀
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+

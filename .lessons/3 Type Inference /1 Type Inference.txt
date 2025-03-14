@@ -1,0 +1,35 @@
+Type Inference nədir?
+
+TypeScript-in `variable` tipini avtomatik təyin etməsi prosesidir. TypeScript bəzi hallarda 
+tipləri açıq şəkildə yazmadan özü müəyyən edir.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Misal 1: Əsas Tip Çıxarımı: Burada 'age' dəyişəninə ilk başda 'number' tipi təyin edilib, çünki ilk olaraq 25 dəyəri verilib.
+
+let age = 25  // TypeScript bunu avtomatik "number" kimi qəbul edir
+age = "30"    // ❌ Xəta: "age" number olmalıdır
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Misal 2: Burada TypeScript nəticə tipini (number) avtomatik return edir, çünki a və b dəyişənləri number tipindədir.
+
+function add(a: number, b: number) {
+  return a + b  
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Misal 3: 
+
+let numbers = [1, 2, 3]                 // TypeScript bunu "number[]" kimi təyin edir
+numbers.push("4")                       // ❌ Xəta: String əlavə etmək olmaz
+
+let user = { name: "Ali", age: 30 }     // TypeScript bunu { name: string, age: number } kimi qəbul edir
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Nəticə
+🔹 Type Inference TypeScript-də kodun daha qısa və təmiz yazılmasına kömək edir.
+🔹 Ancaq bəzi hallarda açıq şəkildə tip yazmaq daha yaxşıdır, xüsusilə kompleks strukturlar üçün. 🚀

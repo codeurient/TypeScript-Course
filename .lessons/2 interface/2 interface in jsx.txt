@@ -1,0 +1,27 @@
+interface -ləri, REACT JS-də JSX formatında fayllar yaradan zaman da, tip təyin etmək üçün istifadə edə bilərik.
+
+Aşağıdakı nümunə TS -in saytında olan nümunədir.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+import * as React from "react";
+ 
+interface UserThumbnailProps {
+  img: string;
+  alt: string;
+  url: string;
+}
+ 
+export const UserThumbnail = (props: UserThumbnailProps) =>
+  <a href={props.url}>
+    <img src={props.img} alt={props.alt} />
+  </a>
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Bu nümunədə `UserThumbnail` adında bir component var və bu component PROPS-lar qəbul edir. Biz isə
+interface ilə həmin props-un qəbul etdiyi obyektin, xassələrinin hansı tipdə olacağını təyin edirik.  

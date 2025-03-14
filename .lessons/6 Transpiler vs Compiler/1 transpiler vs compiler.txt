@@ -1,0 +1,22 @@
+1) 5 ci qovluqda gördüyümüz işə Compiler deyilir. Birdə Transpiler vardır. 
+
+
+Transpiler vs Compiler – Fərqlər
+Hər iki termin kodun bir dildən başqa bir dilə çevrilməsi ilə bağlıdır, lakin fərqli məqsədləri var.
+
+Tərifi
+    Compiler    - Yüksək səviyyəli proqramlaşdırma dilini aşağı səviyyəli (bytecode, machine code) dilə çevirir.
+    Transpiler  - Bir proqramlaşdırma dilini başqa bir yüksək səviyyəli dilə çevirir.
+
+Məqsəd
+    Compiler    - Kodun birbaşa prosessor tərəfindən icra olunması üçün çevrilməsi.
+    Transpiler  - Kodun fərqli mühitlərdə (browservə ya köhnə JS versiyaları) işləməsi üçün çevrilməsi.
+
+Məsələn
+    Compiler    - C, C++, Rust, Go → Machine Code (Binary, Assembly)
+    Transpiler  - TypeScript → JavaScript, ES6 → ES5
+
+    
+Nəticə:
+✅ Compiler – Kodu aşağı səviyyəli dilə çevirir.
+✅ Transpiler – Kodu başqa yüksək səviyyəli dilə çevirir.
