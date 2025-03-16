@@ -76,6 +76,10 @@ console.log(menimRengim3);  // 0
 // ------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+
+
+
 // enum (ənümertasiya) təhlükəsiz və oxunaqlı kod yazmaq üçün istifadə olunur. 
 
 enum LogLevel {
@@ -103,5 +107,26 @@ logMessage(LogLevel.ERROR, "This is an Error message");
 // ✅ IDE köməyi verir                      – LogLevel. yazdıqda mümkün seçimlər göstərilir.
 // ✅ Dəyərlərin dəyişməsi kodu sındırmır   – Əgər "WARN"-ı "WARNING" etsəniz, kodu asanlıqla yeniləyə bilərik.
 
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+enum E {
+    X, // 0
+    Y, // 1
+    Z, // 2 
+}
+
+function f(obj: { X: number; Y: number; Z: number }) {
+    return obj.X + obj.Y + obj.Z;
+}
+f(E)
 
 //! Enum daxilində yazılan xassə adları kiçik yazıla bilər ancaq məsləhətdir ki, böyük yazaq. 
