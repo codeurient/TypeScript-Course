@@ -1,9 +1,16 @@
-// Bir interface başqa bir interface-si `extend` edə bilər. Yəni genişləndirə bilər. 
+// 1. Union Type (Birləşmiş Tip) nədir?
+// Union type (| simvolu ilə yazılır) bir dəyərin birdən çox tipə malik ola biləcəyini göstərir.
 
-// Məsələn, Human adında bir interface yaradırıq və deyirik ki:    PersonInterface extend Human
-// Bu o deməkdir ki, PersonInterface,   Human interfeysi içində olanlarıda götürsün. Yəni istifadə edə bilsin.
+type ID = number | string; // 📌 Burada ID həm number, həm də string ola bilər, amma başqa bir tip (boolean, object və s.) ola bilməz.
 
-// Bu qayda ilə, PersonInterface-si genişləndirmiş oluruq. 
+let userId: ID;
+
+userId = 123;     // ✅ Doğru
+userId = "abc";   // ✅ Doğru
+userId = true;    // ❌ Səhv, çünki yalnız number və string icazəlidir
+
+
+
 
 
 
@@ -12,13 +19,19 @@
 // ------------------------------------------------------------------------------------------------------------------------------
 
 
-interface Human {
-  age: number;
-}
 
-interface PersonInterface extends Human {
-  id: number;
-  name: string;
-}
+// 2. Literal Type (Sabit Tip) nədir?
+// Literal type müəyyən sabit dəyərləri təyin edir. Yəni, dəyişən ancaq göstərilən dəyərlərdən birini qəbul edə bilər.
 
-const p1: PersonInterface = { id: 1,  name: 'John', age: 30 };
+// a) 
+type Alignment = "left" | "bottom" | "right";
+const align: Alignment = "bottom";
+
+
+
+// b) 
+type TrafficLight = "red" | "yellow" | "green";
+let signal: TrafficLight;
+signal = "red";    // ✅ Doğru
+signal = "yellow"; // ✅ Doğru
+signal = "blue";   // ❌ Səhv, çünki yalnız "red", "yellow" və "green" mümkündür
