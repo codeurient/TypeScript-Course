@@ -1,0 +1,14 @@
+HTML-də TypeScript istifadə etmək üçün 2 üsul var.
+
+Əlavə olaraq HTML yox ancaq Terminalda nəticəni görmək üçün isə 1 məsləhətli üsul var. 
+
+
+
+
+1. TypeScript Faylını JavaScript-ə Çevirərək (.ts → .js) ✅ (Tövsiyə olunur)
+a) html faylı yaradırıq (index.html)
+b) ts faylı yaradırıq (test.ts)
+c) ts fayl içində kodlarımızı yazırıq
+d) ts faylını js faylına transpile edirik
+e) js faylı html faylında çağırırıq
+f) nəticəni görmək üçün brauzerə keçirik

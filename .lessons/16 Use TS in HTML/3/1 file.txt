@@ -1,0 +1,12 @@
+3. Alternativ:  ts-node ilə Terminalda Konsol Çıxışı
+
+
+
+
+a. ts-node Quraşdır (Əgər yoxdursa):        sudo npm install -g ts-node
+b. TypeScript Faylını Terminalda İşlət:     sudo ts-node test.ts
+
+
+NOT: Əgər 'ERR_UNKNOWN_FILE_EXTENSION' xətası baş verərsə onda içi boş belə olsa `tsconfig.json` faylını yarat və sonra kodu işə sal. Şəkil 1.
+
+     Əgər buda işə yaramazsa onda `package.json` faylı. Həm `package.json` həmdə `tsconfig.json` fayllarına Şəkil 2 də olan kodu əlavə et.
