@@ -39,6 +39,22 @@ if (Object.keys(person2).indexOf("id") !== -1) {
 
 
 
+// ------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// Başqa alternativ yol
+
+const person3 = {
+    id: 1,
+    name: "John",
+};
+
+if (person3['id']) { 
+    console.log("Yes");
+}
+
 
 
 // ------------------------------------------------------------------------------------------------------------------------------
@@ -53,16 +69,16 @@ if (Object.keys(person2).indexOf("id") !== -1) {
 //      - undefined dəyərləri də yoxlayır.
 
 // NUMUNE 1
-const person3 = {
+const person4 = {
     id: 1,
     name: "John",
 };
 
-if ("id" in person3) { 
+if ("id" in person4) { 
     console.log("Yes");
 }
 
 
 // NUMUNE 2
-const person4 = { id: undefined };
-console.log("id" in person4);       // true
+const person5 = { id: undefined };
+console.log("id" in person5);       // true
