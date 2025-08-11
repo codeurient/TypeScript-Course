@@ -19,3 +19,14 @@
 //     "noEmitOnError": true
 //   }
 // }
+
+
+
+
+
+
+// TODO: TypeScript dokumentasiyasına görə:
+// TODO:    tsc test.ts yazdıqda tsconfig.json nəzərə alınmır və default parametrlər tətbiq olunur.
+// TODO:    Bu səbəbdən noEmitOnError: true işə düşmür və .js faylı yenə yaranır.
+
+// Hal hazırda sadəcə: tsc --noEmitOnError hello.ts belə yazın və bu mövzu haqqında çoxda düşünməyin. 

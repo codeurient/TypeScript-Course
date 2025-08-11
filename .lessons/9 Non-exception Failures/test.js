@@ -31,7 +31,7 @@ message();                  // ❌ TypeError: message is not a function
 // Məsələn, mövcud olmayan bir property-ə müraciət etmək:
 let obj1 = {};
 console.log(obj1.name);          // ✅ undefined (Xəta yoxdur, amma nəticə məntiqli deyil)
-                                // Burada obj.name mövcud deyil, amma JavaScript exception atmır, sadəcə undefined qaytarır.
+                                 // Burada obj.name mövcud deyil, amma JavaScript exception atmır, sadəcə undefined qaytarır.
 
 
 
@@ -53,7 +53,7 @@ console.log(numbers[10]);       // ✅ undefined (Exception atmır)
 
 
 // 2️⃣ delete əməliyyatı uğursuz olsa da exception atmır
-"use strict";
+// "use strict";
 const obj2 = {};
 Object.defineProperty(obj2, "name", {
   value: "John",
@@ -63,7 +63,7 @@ Object.defineProperty(obj2, "name", {
 
 delete obj2.name;                // ✅ false qaytarır, amma exception atmır
 console.log(obj2.name);          // "John" (dəyər hələ də qalır).
-                                // Burada delete obj.name işləmədiyi halda, JavaScript exception atmır, sadəcə false qaytarır.
+                                 // Burada delete obj.name işləmədiyi halda, JavaScript exception atmır, sadəcə false qaytarır.
 
 
 

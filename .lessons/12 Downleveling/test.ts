@@ -22,6 +22,7 @@ const date   = new Date();
 console.log(`Hello ${person}, today is ${date.toDateString()}!`);
 
 
+
 // ⏩ TypeScript bu kodu köhnə ES5 versiyasına çevirir (concat() funksiyası ilə). Bu çevirmə köhnə brauzerlərdə də işləməsi üçün edilir: 
 // console.log("Hello ".concat(person, ", today is ").concat(date.toDateString(), "!"));
 
@@ -40,5 +41,5 @@ console.log(`Hello ${person}, today is ${date.toDateString()}!`);
 
 
 // 5️⃣ Nəticə
-// Downleveling, müasir TypeScript və JavaScript kodlarını köhnə brauzerlər və mühitlər üçün uyğunlaşdırmaq üçün zəruri bir prosesdir. 🚀
+// Downleveling, müasir TypeScript və JavaScript kodlarını köhnə brauzerlər və mühitlər üçün uyğunlaşdırmaq prosesdir. 
 

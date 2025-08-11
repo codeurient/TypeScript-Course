@@ -19,5 +19,5 @@ person1 = [25, "Alice"]; // ❌ Xəta: Ardıcıllıq səhvdir
 
 // ✅ Necə olmalıdır:
 let person2: [string, number];
-person2 = ["Alice", 25]; // ✅ Doğru
+person2 = ["Alice", 25, 'fgh']; // ✅ Doğru
 

@@ -24,7 +24,7 @@ id1 = true;                       // ❌ Xəta: yalnız string və ya number olm
 
 // ✅ Necə olmalıdır:
 let id2: string | number;
-id2 = "123";                // ✅ Doğru
+id2 = "sadasd ad";                // ✅ Doğru
 id2 = 123;                  // ✅ Doğru
 
 
