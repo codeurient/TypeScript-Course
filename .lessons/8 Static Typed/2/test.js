@@ -4,6 +4,7 @@ let message = function() {
 
 
 
+
 // 💡 JavaScript-də bir dəyişənin hansı tipə aid olduğunu bilmədən onun üzərində əməliyyat aparmaq təhlükəlidir.
 // Ona görə də kod yazarkən typeof və ya optional chaining (?.) kimi üsullardan istifadə etmək faydalıdır:
 

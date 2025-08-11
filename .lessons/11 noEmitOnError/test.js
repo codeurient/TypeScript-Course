@@ -4,7 +4,7 @@
 // Bu parametr səhv olduğu halda, kompilyatorun çıxış faylı (.js) yaratmasını (emit etməsini) bloklayır.
 
 
-// Terminalda azılır:  tsc --noEmitOnError hello.ts
+// Terminalda yazılır:  tsc --noEmitOnError hello.ts
 
 
 

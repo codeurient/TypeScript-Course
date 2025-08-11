@@ -62,7 +62,7 @@ function add3(id: number | string) {
 }
 
 add3(1);
-add3("hello");
+
 
 
 
@@ -134,6 +134,8 @@ function welcomePeople2(x: (number | string)[] | string) {
 
 // Daha rahat olsun deyə öz tipimizi yarada bilərik. Buna union type yaxud custom type deyilir. 
 type MY_ID_TYPE = number | string;
+
+
 function welcomePeople3(id: MY_ID_TYPE) {
   if (typeof id === "string") {
     console.log(id.toUpperCase());              // ✅ Doğru
@@ -142,3 +144,6 @@ function welcomePeople3(id: MY_ID_TYPE) {
   } 
 }
 welcomePeople3( 'hello' ); 
+
+
+

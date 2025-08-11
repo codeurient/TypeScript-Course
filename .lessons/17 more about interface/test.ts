@@ -23,7 +23,7 @@ welcomePeople1( 'hello' );
 
 
 
-// 1) Həmin bu xüsusiyyəti İNTERFACE ilədə etmək mümkündür. 
+// 1) Həmin bu xüsusiyyəti İNTERFACE ilə də etmək mümkündür. 
 // interface əsasən obyektləri təsvir etmək üçün istifadə olunur. Lakin, birbaşa number | string kimi bir BİRLƏŞMİŞ 
 // (union) tipi, interface ilə yaratmaq mümkün deyil. Lakin, alternativ həll yolu kimi type və interface birlikdə istifadə edilə bilər.
 
@@ -114,9 +114,9 @@ const p2: PersonInterface = { id: 1,  name: 'John'  }
 //! -----------------------------------------------------------------------------------------------------------------------------------
 // Xüsusiyyət	                         interface	                               type                                             //! |
 //! -----------------------------------------------------------------------------------------------------------------------------------
-// Genişləndirmə (Extends)	           interface başqa bir                       type ilə & (intersection)                        //! |
+// Genişləndirmə (Extends)	           interface başqa bir                       type digər type ilə & (intersection)             //! |
 //                                     interface-dən extends edə                 vasitəsilə birləşdirilə bilər.                   //! |
-//                                     bilər.	type digər                                                                          //! |
+//                                     bilər.	                                                                                    //! |
                                                                                                                                   //! |
 //! -----------------------------------------------------------------------------------------------------------------------------------
                                                                                                                                   //! |

@@ -1,4 +1,4 @@
-// TypeScript Enum JavaScript-ə necə çevrilir?
+// TypeScript Enum, JavaScript-ə necə çevrilir?
 
 // TypeScript enum istifadə etsək, transpilation (TS → JS çevirmə) zamanı bu JS koduna aşağıdakı kimi çevrilir.
 // Məsələn, aşağıdakı TypeScript kodu:

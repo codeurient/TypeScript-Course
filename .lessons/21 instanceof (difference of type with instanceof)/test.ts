@@ -1,4 +1,4 @@
-// instanceof JavaScript və TypeScript-də istifadə olunan operatordur. O, bir obyektin müəyyən bir class-dan və ya konstruktor funksiyasından 
+// instanceof, JavaScript və TypeScript-də istifadə olunan operatordur. O, bir obyektin müəyyən bir class-dan və ya konstruktor funksiyasından 
 // yaranıb-yaranmadığını yoxlamaq üçün istifadə edilir.
 
 
@@ -12,7 +12,6 @@ function logValue(x: Date | string) {
     } else {
       console.log(x.toUpperCase()); // ✅ Əgər x string-dirsə, böyük hərflə yazdır
     }
-
   }
 
   

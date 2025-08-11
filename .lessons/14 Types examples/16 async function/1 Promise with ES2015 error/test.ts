@@ -23,3 +23,6 @@ async function sumAsync2(a: number, b: number) {
     return a + b; // TypeScript avtomatik olaraq `Promise<number>` kimi qəbul edir
 }
 sumAsync2(5, 6).then(console.log);          // 11
+
+
+console.log(  await sumAsync2(5, 6)   );
